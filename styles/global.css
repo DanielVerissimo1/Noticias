@@ -65,6 +65,28 @@ main {
         "ai aside";
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding-inline: 16px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "featured"
+            "weekly"
+            "ai"
+            "aside";
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-inline: 12px;
+    }
+}
+
 .content-tag {
     display: inline-block;
     background-color: var(--brand-color-dark);
